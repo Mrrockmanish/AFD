@@ -1,4 +1,23 @@
 @font-face {
-  font-family: generalFont;
-  src: url("../fonts/Prompt-Regular.ttf") format("truetype"),
+  font-family: 'Commissioner';
+  src: url('../fonts/Commissioner-Regular.eot');
+  src: local('Commissioner Regular'), local('Commissioner-Regular'),
+  url('../fonts/Commissioner-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Commissioner-Regular.woff2') format('woff2'),
+  url('../fonts/Commissioner-Regular.woff') format('woff'),
+  url('../fonts/Commissioner-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../fonts/Commissioner-SemiBold.eot');
+  src: local('Commissioner SemiBold'), local('Commissioner-SemiBold'),
+  url('../fonts/Commissioner-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Commissioner-SemiBold.woff2') format('woff2'),
+  url('../fonts/Commissioner-SemiBold.woff') format('woff'),
+  url('../fonts/Commissioner-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }

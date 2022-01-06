@@ -1,30 +1,57 @@
-include pug/libs/_libs
+extends main
 
-doctype html
-html(lang='en')
-    include pug/_head
-    body
-        .container.pt-5d
-            h1.text-5xl.font-semibold.text-center Hello from Webpackded
-            h2.container__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam!
-            +image('angular')
-            +image('webpack')
-            .block
-            .user
-            //// Button trigger modal
-            //button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop')
-            //    | Launch static backdrop modal
-            //// Modal
-            //#staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
-            //    .modal-dialog
-            //        .modal-content
-            //            .modal-header
-            //                h5#staticBackdropLabel.modal-title Modal title
-            //                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-            //            .modal-body
-            //                | ...
-            //            .modal-footer
-            //                button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
-            //                button.btn.btn-primary(type='button') Understood
+block content
 
-
+    .offer(class='py-20 sm:py-32 lg:pt-40 lg:pb-40 xl:pb-60 no-repeat bg-cover bg-center' style='background-image: url(./src/images/examples/main-bg.png)')
+        .container
+            h1(class='font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-[4rem] max-w-[800px] leading-[1.125] px-4 py-6 rounded-md bg-[rgba(244,244,244,0.61)]') Конкретное уникальное предложение
+            .mt-16
+                a(href='#' class='bg-#16 rounded-md text-white h-12 px-8 inline-flex items-center justify-center shadow-[0_13px_12px_-7px_rgba(18,67,54,0.5)] hover:shadow-none') Перейти в каталог
+    div(class='container')
+        div(class='w-full xl:w-7/12 mt-16')
+            h2(class="text-2xl md:text-4xl xxl:text-5xl font-semibold") Компания АФД - ваше конкурентное преимущество
+        div(class='flex flex-wrap -mx-4')
+            div(class="w-full xl:w-7/12 px-4 mt-10")
+                p Новое время бросает очередной вызов человечеству. Общество живёт, постоянно ускоряясь и меняясь. Всё быстрее происходит смена принципов, понятий и оценок. Многое из того, что вчера казалось очевидным, сегодня не является аксиомой, а завтра может полностью противоречить здравому смыслу.  Нам, живущим и работающим сейчас и здесь на Земле, необходимо тоже меняться, не отставать от запросов времени, улавливать правильные тенденции, поддерживать их и развивать.
+                p Занимаясь любым бизнесом, любой работой для того, чтобы обеспечить себе и своим близким достойную жизнь, мы должны задумываться о последующих поколениях, о том, на какой Земле они будут жить. Всё чаще и громче природа напоминает нам об этом, заставляет нас более пристально взглянуть на вопросы экологии, бережнее относиться к любым ресурсам планеты, осознать, что лес, воздух, вода и, конечно, сама земля не простят нам расточительства и пренебрежения к ним.
+                p Очевидно, что особая ответственность в вопросе сохранения природы и связанной с этим проблемой продовольственной безопасности человечества лежит на тех, кто непосредственно работает с природой, кто с ней договаривается. Сельское хозяйство, безусловно, является одной из самых жизненно важных отраслей многих государств, в том числе и России. Вся команда компании «Неопорт» чувствует себя частью этой отрасли, осознаёт ответственность и прилагает усилия к тому, чтобы сельское хозяйство России стало процветающей частью экономики, чтобы культура земледелия соответствовала духу времени, применяемые технологии были воплощением самых современных достижений науки, чтобы конкуренция на рынке не оставляла опустошённых и разорённых хозяйств и компаний, а заставляла участников рынка брать новые высоты в техническом и экономическом развитии, формулируя справедливые и эффективные правила игры. А самое главное — чтобы в отрасль приходили люди, любящие землю, ощущающие жизненную необходимость заниматься этим непростым ремеслом. И мы ищем таких людей.
+            div(class='hidden xl:block xl:w-5/12 px-4 mt-10')
+                +img('examples','field-rounds.jpg')
+        div(class='mt-16 lg:mt-28')
+            h2(class="text-2xl md:text-4xl xxl:text-5xl font-semibold") Основные направления
+            div(class='flex flex-wrap -mx-1.5 xl:-mx-4 mt-8 lg:mt-10 xl:mt-0')
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-1.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') СЗР
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-2.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') Микроудобрения
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-3.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') Агоросопровождение
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-4.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') Авиаобработка
+        div(class='mt-16 lg:mt-28')
+            h2(class="text-2xl md:text-4xl xxl:text-5xl font-semibold") Наши партнеры
+            div(class='flex flex-wrap -mx-1.5 xl:-mx-4 mt-8 lg:mt-10 xl:mt-0')
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-1.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') СЗР
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-2.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') Микроудобрения
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-3.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') Агоросопровождение
+                div(class='w-1/2 xl:w-1/4 mt-2.5 xl:mt-12 px-1.5 xl:px-4')
+                    div(class='rounded-lg h-full bg-white py-6 px-2 sm:px-4')
+                        img(src='./src/images/elements/vector-4.svg' class='mx-auto')
+                        div(class='text-center mt-5 text-sm sm:text-xl') Авиаобработка

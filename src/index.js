@@ -2,17 +2,15 @@ import './styles/index.scss'
 import $ from "jquery";
 // import 'bootstrap';
 
-const userStack = {
-    language: 'JavaScript',
-    framework: 'Angular'
-}
+$('.li-dropdown').on('click', function () {
+  $(this).find('.li-dropdown__ul').fadeToggle();
 
-const user = {
-    name: 'Vitalij',
-    age: '37',
-    ...userStack
-}
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    const div = $(".li-dropdown"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      div.find('.li-dropdown__ul').fadeOut(); // скрываем его
+    }
+  });
 
-$('.block').html('jQuery is working');
-
-console.log(user)
+});

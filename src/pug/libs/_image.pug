@@ -1,2 +1,2 @@
-mixin image(name)
-    img.src(src=`../src/images/${name}.png` alt=name)
+mixin img(folder,name, alt)
+    img(src=`../src/images/${folder}/${name}` alt=`${alt ? alt : ''}`)
