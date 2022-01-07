@@ -12,7 +12,9 @@ module.exports = {
     colors: {
       'white': '#FFFFFF',
       '#16': '#16795F',
-      '#F4': '#F4F4F4'
+      '#F4': '#F4F4F4',
+      '#81': '#818181',
+      '#99': '#999999'
     },
 
     extend: {

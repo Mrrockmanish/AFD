@@ -49,6 +49,10 @@ a {
   p {
     @apply mb-4
   }
+
+  input, textarea, button {
+    @apply outline-none
+  }
 }
 
 //@layer components {
