@@ -15,9 +15,8 @@ module.exports = {
     user: './src/user.js',
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    assetModuleFilename: "images/[name][ext][query]",
+    // assetModuleFilename: "[path]/[ext][query]",
     clean: true,
   },
   devtool: 'source-map',
@@ -31,12 +30,7 @@ module.exports = {
       filename: 'css/styles.css'
     }),
     new HtmlWebpackPlugin({
-      filename: 'index.html',
       template: "./src/index.pug"
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'contacts.html',
-      template: "./src/contacts.pug"
     })
   ],
   module: {
@@ -71,6 +65,9 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext][query]'
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
