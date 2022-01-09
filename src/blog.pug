@@ -1,0 +1,20 @@
+extends main
+
+block content
+    div(class='container')
+        h1(class='text-2xl sm:text-[2rem] sm:leading-9 font-medium mt-6') Агросправочник
+        div.mt-6
+            p Новое время бросает очередной вызов человечеству. Общество живёт, постоянно ускоряясь и меняясь. Всё быстрее происходит смена принципов, понятий и оценок. Многое из того, что вчера казалось очевидным, сегодня не является аксиомой, а завтра может полностью противоречить здравому смыслу.  Нам, живущим и работающим сейчас и здесь на Земле, необходимо тоже меняться, не отставать от запросов времени, улавливать правильные тенденции, поддерживать их и развивать.
+        div(id='pdopage')
+            div(class='rows flex flex-wrap -mx-1.5 xl:-mx-2 xxl:-mx-4')
+                +article('Заголовок новости')
+                +article('Заголовок новости длинный текст')
+                +article('Заголовок новости')
+                +article('Заголовок новости')
+                +article('Заголовок новости')
+                +article('Заголовок новости длинный текст')
+                +article('Заголовок новости')
+                +article('Заголовок новости')
+            div(class='flex justify-center mt-10 lg:mt-20')
+                div(type='submit' class='w-full sm:w-60 hover:brightness-50 duration-300')
+                    span(class='bg-#16 rounded-md text-white text-sm font-semibold h-12 w-full inline-flex items-center justify-center') Загрузить еще

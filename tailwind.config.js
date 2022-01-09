@@ -10,11 +10,14 @@ module.exports = {
     },
 
     colors: {
+      'transparent': 'transparent',
       'white': '#FFFFFF',
       '#16': '#16795F',
       '#F4': '#F4F4F4',
       '#81': '#818181',
-      '#99': '#999999'
+      '#99': '#999999',
+      '#87': '#87CB94',
+      '#C5': '#C5C5C5'
     },
 
     extend: {

@@ -37,6 +37,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'contacts.html',
       template: "./src/contacts.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'catalog.html',
+      template: "./src/catalog.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: "./src/about.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'blog.html',
+      template: "./src/blog.pug"
     })
   ],
   module: {

@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "node_modules/magnific-popup/dist/magnific-popup";
+
 
 $root-font-size: 16;
 
@@ -64,3 +66,45 @@ a {
 //  }
 //  /* ... */
 //}
+
+.catalog-nav {
+  li {
+    .catalog-nav__a {
+      border: 1px solid #87CB94;
+      color: #000000;
+      transition: 0.3s;
+    }
+
+    &.active {
+      .catalog-nav__a {
+        border: 1px solid #16795F;
+        color: #FFFFFF;
+        background-color: #16795F;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.checkbox-hidden:checked + .custom-checkbox {
+  &::before {
+    content: '';
+    background-image: url("../images/elements/check.svg");
+    background-size: s(10) s(6);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: s(10);
+    height: s(6);
+  }
+}
+
+.filters-section:not(:last-of-type) {
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.filters-block {
+  @media (min-width: 992px) {
+      display: block!important;
+  }
+}

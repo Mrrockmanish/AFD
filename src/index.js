@@ -1,6 +1,6 @@
 import './styles/index.scss'
 import $ from "jquery";
-// import 'bootstrap';
+import mangificPopup from 'magnific-popup';
 
 $('.li-dropdown').on('click', function () {
   $(this).find('.li-dropdown__ul').fadeToggle();
@@ -14,3 +14,26 @@ $('.li-dropdown').on('click', function () {
   });
 
 });
+
+$('.filers-switch').on('click', function (){
+  $('.filters-block').fadeToggle();
+});
+
+$('.filters-button').on('click', function (){
+  $('.filters-block').fadeOut();
+})
+
+//галерея
+const gallery = (galleryEl, delegateSelector) => {
+  galleryEl.each(function () {
+    $(this).magnificPopup({
+      delegate: delegateSelector,
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  })
+};
+
+gallery($('.afd-gallery '), '.afd-gallery__item a');

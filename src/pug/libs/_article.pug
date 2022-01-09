@@ -1,0 +1,10 @@
+mixin article(text)
+    div(class='sm:w-1/2 xl:w-1/4 mt-4 xxl:mt-8 px-1.5 xl:px-2 xxl:px-4')
+        div(class='rounded-lg overflow-hidden flex flex-col h-full bg-white')
+            a(href='#' class='hover:brightness-50 h-[14.5rem] lg:h-64 xl:h-[14.5rem]')
+                img(src=require('/src/images/examples/news-item.png') alt=`${text}` class='mx-auto object-cover w-full h-full')
+            div.mt-4.flex.flex-col.flex-grow.px-5.pb-6
+                div(class='text-xl')= text
+                div.mt-2
+                    p Новое время бросает очередной вызов человечеству. Общество живёт, постоянно ускоряясь и меняясь.
+                a(href='#' class="font-medium mt-auto") Читать всю новость
