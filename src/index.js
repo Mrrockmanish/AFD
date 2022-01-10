@@ -37,3 +37,18 @@ const gallery = (galleryEl, delegateSelector) => {
 };
 
 gallery($('.afd-gallery '), '.afd-gallery__item a');
+
+$('.open-block').on('click', '.open-block__caption', function (){
+  const openBlock = $(this).closest('.open-block');
+
+  openBlock.toggleClass('open');
+
+  if (openBlock.hasClass('open')) {
+
+    openBlock.find('.open-block__content').fadeIn();
+  } else {
+
+    openBlock.find('.open-block__content').fadeOut();
+  }
+
+})

@@ -1,0 +1,174 @@
+extends main
+
+block content
+    div(class='container')
+        h1(class='text-2xl sm:text-[2rem] sm:leading-9 font-medium mt-6') Анаконда®, КЭ
+        div(class='mt-2') 960 г/л С-метолахлора
+        div(class='flex flex-wrap -mx-4 mt-6')
+            div(class='w-full lg:w-6/12 xxl-6/12 px-4 order-2 xl:order-1')
+                div.mt-6
+                    p Препарат, применяемый для фумигации помещений для хранения зернопродуктов, а также для фумигации зерна в борьбе с вредителями запасов.
+                div.mt-10.font-semibold Подходит к культурам
+                div(class='flex flex-wrap -mx-4')
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/len.svg'))
+                        div(class='font-medium ml-2') Лен
+
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/len.svg'))
+                        div(class='font-medium ml-2') Лен
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/sunflower.svg'))
+                        div(class='font-medium ml-2') Подсолнечник
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/raps.svg'))
+                        div(class='font-medium ml-2') Рапс
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/kukuruza.svg'))
+                        div(class='font-medium ml-2') Кукуруза
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/soya.svg'))
+                        div(class='font-medium ml-2') Соя
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/potato.svg'))
+                        div(class='font-medium ml-2') Картофель
+                    div(class='flex items-center active px-4 mt-4')
+                        div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                            img(src=require('./images/elements/zern.svg'))
+                        div(class='font-medium ml-2') Зерновые
+
+                div(class='mt-10')
+                    p.mb-2
+                        strong Действующее вещество:
+                        span &nbsp;560 г/кг алюминия фосфида
+                    p.mb-2
+                        strong Группа:
+                        span &nbsp;Фумигант
+                    p.mb-2
+                        strong Препаративная форма:
+                        span &nbsp;таблетка
+            div(class='w-full lg:w-6/12 xxl-w-7/12 px-4 order-1 xl:order-2')
+                img(src=require('./images/examples/product.png') class='block mx-auto')
+        div(class='mt-8')
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Назаначение
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Регламент применения
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    table()
+                        thead
+                            tr
+                                td Культуры
+                                td Вредный объект
+                                td Способ, время обработки, особенности применения
+                                td Норма применения препарата, л/га
+                                td Срок ожидания (кратность обработок)
+                        tbody
+                            td Кукуруза, Cоя, Подсолнечник, Рапс яровой, Свекла сахарная
+                            td Однолетние злаковые и некоторые двудольные сорняки
+                            td Опрыскивание почвы до посева или до всходов культуры. В засушливых условиях рекомендуется мелкая заделка препарата (на глубину не более 5 см)
+                            td 1,3-1,6
+                            td 60(1)
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Механизм действия
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Спектр действия
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Визуальные признаки и скорость воздействия
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Совместимость с другими препаратами
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Влияние условий окружающей среды на действие препарата
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Рекомендации по внесению препарата
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Приготовление рабочего раствора
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+            div(class='open-block bg-#EC mt-4')
+                div(class='open-block__caption flex justify-between items-start px-4 sm:pl-8 py-4 cursor-pointer')
+                    div(class='text-xl mr-4') Внимание
+                    <svg class="open-block__caption-chevron shrink-0 h-4 w-6 mt-2" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13.5 14L26 1" stroke="black"/>
+                    </svg>
+                div(class='open-block__content hidden overflow-x-auto px-4 sm:pl-8 sm:pr-5 pb-4')
+                    p Высокоэффективный почвенный довсходовый гербицид для защиты посевов кукурузы, подсолнечника, сои, сахарной свеклы и рапса от однолетних злаковых и некоторых двудольных сорняков.
+        h3(class='font-medium text-xl sm:text-2xl mb-2 mt-10 md:mt-20') Фотографии сорняков
+        div(class='afd-gallery flex flex-wrap -mx-1.5 xl:-mx-4')
+            div(class='afd-gallery__item w-full md:w-1/3 px-1.5 xl:px-4 mt-6')
+                a(href=require('./images/examples/a1.jpg'))
+                    img(src=require('./images/examples/a1.jpg') alt='')
+            div(class='afd-gallery__item w-full md:w-1/3 px-1.5 xl:px-4 mt-6')
+                a(href=require('./images/examples/a2.jpg'))
+                    img(src=require('./images/examples/a2.jpg') alt='')
+            div(class='afd-gallery__item w-full md:w-1/3 px-1.5 xl:px-4 mt-6')
+                a(href=require('./images/examples/a3.jpg') )
+                    img(src=require('./images/examples/a3.jpg') alt='')
+        h3(class='font-medium text-xl sm:text-2xl mb-2 mt-10 md:mt-20') Фотографии опытов
+        div(class='afd-gallery flex flex-wrap -mx-1.5 xl:-mx-4')
+            div(class='afd-gallery__item w-full md:w-1/2 px-1.5 xl:px-4 mt-6')
+                a(href=require('./images/examples/ab1.jpg'))
+                    img(src=require('./images/examples/ab1.jpg') alt='')
+            div(class='afd-gallery__item w-full md:w-1/2 px-1.5 xl:px-4 mt-6')
+                a(href=require('./images/examples/ab2.jpg'))
+                    img(src=require('./images/examples/ab2.jpg') alt='')
+        div(class='mt-16 md:mt-24')
+            h3(class='font-medium text-xl sm:text-2xl') Мы готовы ответить на ваши вопросы
+                include pug/_quest-form

@@ -1,0 +1,15 @@
+form(class='flex flex-wrap lg:max-w-3xl -mx-4')
+    div(class='w-full md:w-1/3 mt-4 px-4')
+        label(for='name' class='text-#81 text-sm') Ваши Фамилия и Имя*
+        input(id='name' type='text' name='name' class='text-sm w-full rounded-md bg-white h-10 border border-[#E7E7E7] placeholder-[#99] px-3 mt-2' placeholder='Иванов Иван')
+    div(class='w-full md:w-1/3 mt-4 px-4')
+        label(for='tel' class='text-#81 text-sm') Ваш номер телефона*
+        input(id='tel' type='text' name='tel' class='text-sm w-full rounded-md bg-white h-10 border border-[#E7E7E7] placeholder-[#99] px-3 mt-2' placeholder='+7 (___) ___ __ __')
+    div(class='w-full md:w-1/3 mt-4 px-4')
+        label(for='email' class='text-#81 text-sm') Ваш E-mail*
+        input(id='email' type='text' name='email' class='text-sm w-full rounded-md bg-white h-10 border border-[#E7E7E7] placeholder-[#99] px-3 mt-2' placeholder='ivanov@yandex.ru')
+    div(class='w-full md:w-full mt-4 px-4')
+        textarea(class='text-sm w-full rounded-md bg-white h-40 border border-[#E7E7E7] placeholder-[#99] resize-none px-3 py-2' placeholder='Ваш вопрос')
+    div(class='w-full md:w-1/3 px-4 mt-6')
+        button(type='submit' class='w-full hover:brightness-50 duration-300')
+            span(class='bg-#16 rounded-md text-white text-sm font-semibold h-10 px-8 w-full inline-flex items-center justify-center') Отправить

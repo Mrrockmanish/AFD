@@ -1,0 +1,77 @@
+extends main
+
+block content
+    div(class='container')
+        h1(class='text-2xl sm:text-[2rem] sm:leading-9 font-medium mt-6') Культуры
+        div.mt-6
+            p Новое время бросает очередной вызов человечеству. Общество живёт, постоянно ускоряясь и меняясь. Всё быстрее происходит смена принципов, понятий и оценок. Многое из того, что вчера казалось очевидным, сегодня не является аксиомой, а завтра может полностью противоречить здравому смыслу.  Нам, живущим и работающим сейчас и здесь на Земле, необходимо тоже меняться, не отставать от запросов времени, улавливать правильные тенденции, поддерживать их и развивать.
+        ul(id='cultures-nav' class='cultures-nav flex flex-wrap -mx-2.5')
+            li(class='active px-2.5 mt-4')
+                a(href='#' class='flex items-center py-2 px-3 border border-#C5 rounded-md hover:brightness-90')
+                    div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                        img(src=require('./images/elements/len.svg'))
+                    div(class='font-medium ml-2') Лен
+            li(class='px-2.5 mt-4')
+                a(href='#' class='flex items-center py-2 px-3 border border-#C5 rounded-md hover:brightness-90')
+                    div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                        img(src=require('./images/elements/sunflower.svg'))
+                    div(class='font-medium ml-2') Подсолнечник
+            li(class='px-2.5 mt-4')
+                a(href='#' class='flex items-center py-2 px-3 border border-#C5 rounded-md hover:brightness-90')
+                    div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                        img(src=require('./images/elements/raps.svg'))
+                    div(class='font-medium ml-2') Рапс
+            li(class='px-2.5 mt-4')
+                a(href='#' class='flex items-center py-2 px-3 border border-#C5 rounded-md hover:brightness-90')
+                    div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                        img(src=require('./images/elements/kukuruza.svg'))
+                    div(class='font-medium ml-2') Кукуруза
+            li(class='px-2.5 mt-4')
+                a(href='#' class='flex items-center py-2 px-3 border border-#C5 rounded-md hover:brightness-90')
+                    div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                        img(src=require('./images/elements/soya.svg'))
+                    div(class='font-medium ml-2') Соя
+            li(class='px-2.5 mt-4')
+                a(href='#' class='flex items-center py-2 px-3 border border-#C5 rounded-md hover:brightness-90')
+                    div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                        img(src=require('./images/elements/zern.svg'))
+                    div(class='font-medium ml-2') Зерновые
+            li(class='px-2.5 mt-4')
+                a(href='#' class='flex items-center py-2 px-3 border border-#C5 rounded-md hover:brightness-90')
+                    div(class='culture-img-box flex items-center justify-center w-[2.1875rem] h-8')
+                        img(src=require('./images/elements/potato.svg'))
+                    div(class='font-medium ml-2') Картофель
+        h3(class='font-medium text-xl sm:text-2xl mb-4 mt-10') Схема защиты свеклы
+        div(class='mt-6')
+            img(src=require('./images/examples/scheme.jpg'))
+        h3(class='font-medium text-xl sm:text-2xl mb-6 mt-16') Подходящие препараты
+        div(class='flex flex-wrap -mx-1.5 xxl:-mx-4')
+            div(class='w-1/2 md:w-1/3 xl:w-1/4 xxl:w-1/5 px-1.5 xxl:px-4 mb-3 xxl:mb-4')
+                a(href='#' class='flex flex-col h-full border border-#C5 rounded-lg px-4 py-4 hover:border-transparent hover:shadow-[0_0_0_2px_#87CB94]')
+                    div(class='font-medium') Анаконда®, КЭ
+                    div(class='text-xs mt-auto') 960 г/л С-метолахлора
+            div(class='w-1/2 md:w-1/3 xl:w-1/4 xxl:w-1/5 px-1.5 xxl:px-4 mb-3 xxl:mb-4')
+                a(href='#' class='flex flex-col h-full border border-#C5 rounded-lg px-4 py-4 hover:border-transparent hover:shadow-[0_0_0_2px_#87CB94]')
+                    div(class='font-medium') Анаконда®, КЭ
+                    div(class='text-xs mt-auto') 960 г/л С-метолахлора
+            div(class='w-1/2 md:w-1/3 xl:w-1/4 xxl:w-1/5 px-1.5 xxl:px-4 mb-3 xxl:mb-4')
+                a(href='#' class='flex flex-col h-full border border-#C5 rounded-lg px-4 py-4 hover:border-transparent hover:shadow-[0_0_0_2px_#87CB94]')
+                    div(class='font-medium') Анаконда®, КЭ
+                    div(class='text-xs mt-auto') 960 г/л С-метолахлора
+            div(class='w-1/2 md:w-1/3 xl:w-1/4 xxl:w-1/5 px-1.5 xxl:px-4 mb-3 xxl:mb-4')
+                a(href='#' class='flex flex-col h-full border border-#C5 rounded-lg px-4 py-4 hover:border-transparent hover:shadow-[0_0_0_2px_#87CB94]')
+                    div(class='font-medium') Анаконда®, КЭ
+                    div(class='text-xs mt-auto') 960 г/л С-метолахлора
+            div(class='w-1/2 md:w-1/3 xl:w-1/4 xxl:w-1/5 px-1.5 xxl:px-4 mb-3 xxl:mb-4')
+                a(href='#' class='flex flex-col h-full border border-#C5 rounded-lg px-4 py-4 hover:border-transparent hover:shadow-[0_0_0_2px_#87CB94]')
+                    div(class='font-medium') Анаконда®, КЭ
+                    div(class='text-xs mt-auto') 960 г/л С-метолахлора
+        div(class='flex justify-center mt-10')
+            div(class='w-full sm:w-60 hover:brightness-50 duration-300')
+                span(class='bg-#16 rounded-md text-white text-sm font-semibold h-12 w-full inline-flex items-center justify-center') Загрузить еще
+        div(class='flex flex-wrap -mx-4 mt-24')
+            div(class='w-full hidden xl:block xxl:w-1/2 xl:w-5/12 px-4')
+                img(src=require('./images/examples/question-form.jpg') class="w-full h-full object-cover")
+            div(class='w-full flex flex-col justify-between xxl:w-1/2 xl:w-7/12 px-4')
+                h3(class='font-medium text-xl sm:text-2xl') Мы готовы ответить на ваши вопросы
+                include pug/_quest-form
