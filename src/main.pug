@@ -3,7 +3,9 @@ include pug/libs/_libs
 doctype html
 html(lang='en')
     include pug/_head
-    body(class='pt-16 lg:pt-[5rem] xl:pt-0 bg-[#E5E5E5]')
+    include pug/_mobile-menu
+    body(class='pt-14 lg:pt-[5rem] xl:pt-0 bg-[#FAFAFA]')
         include pug/_header
         block content
+    include pug/_contacts-right
     include pug/footer
